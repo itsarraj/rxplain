@@ -1,0 +1,24 @@
+[package]
+name = "rxplain"
+version = "0.1.0"
+edition = "2021"
+description = "Explains a regex match against real input in the terminal — highlighted full match and named/numbered capture groups, no browser round-trip to regex101 needed"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/rxplain"
+readme = "README.md"
+keywords = ["regex", "cli", "debugging", "terminal"]
+categories = ["command-line-utilities"]
+
+[lib]
+name = "rxplain"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rxplain"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
+regex = "1"
