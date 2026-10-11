@@ -8,6 +8,12 @@ This is the same highlighted-match, labeled-groups view as a local
 binary: no browser, no pasting a real log line or a real customer email
 into a third-party site just to debug a regex.
 
+## Installation
+
+```sh
+cargo install --path .
+```
+
 ## Usage
 
 ```bash
